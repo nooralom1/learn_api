@@ -17,6 +17,8 @@ static Future<dynamic> nationalize() async {
 
   log("--------------- 2222   ---------------");
 
+  log("$data");
+
   return data;
 }
 }

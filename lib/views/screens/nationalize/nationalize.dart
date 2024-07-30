@@ -1,6 +1,4 @@
-import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:learn_api/controller/api_controller/nationalize.dart';
 
 class NationalScreen extends StatefulWidget {
   const NationalScreen({super.key});
@@ -15,7 +13,7 @@ class _NationalScreenState extends State<NationalScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text("National"),
+        title: const Text("National"),
         centerTitle: true,
       ),
       body: Center(
@@ -24,11 +22,8 @@ class _NationalScreenState extends State<NationalScreen> {
           children: [
             ElevatedButton(
                 onPressed: () async{
-                  var call = await Nationalize.nationalize();
-                  print("===========");
-                  print("${call}");
                 },
-                child: Text("Call Api"))],
+                child: const Text("Call Api"))],
         ),
       ),
     );
