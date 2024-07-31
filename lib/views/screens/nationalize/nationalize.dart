@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NationalScreen extends StatefulWidget {
-  const NationalScreen({super.key});
+class NationalizeScreen extends StatefulWidget {
+  const NationalizeScreen({super.key});
 
   @override
-  State<NationalScreen> createState() => _NationalScreenState();
+  State<NationalizeScreen> createState() => _NationalizeScreenState();
 }
 
-class _NationalScreenState extends State<NationalScreen> {
+class _NationalizeScreenState extends State<NationalizeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
