@@ -13,6 +13,7 @@ class _NationalizeScreenState extends State<NationalizeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
+
         title: const Text("National"),
         centerTitle: true,
       ),

@@ -6,6 +6,7 @@ import 'package:learn_api/models/productlist_model.dart';
 
 class ProductListService {
 
+
   static Future<List<Products>> productListService() async {
     try{
       Response response = await http.get(Uri.parse("https://cit-ecommerce-codecanyon.bandhantrade.com/api/app/v1/products"));
