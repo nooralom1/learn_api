@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_api/views/screens/home/meal/meal.dart';
-import 'package:learn_api/views/screens/national/national_screen.dart';
+import 'package:learn_api/views/screens/meal/meal.dart';
 
 void main() {
   runApp(const MyApp());
