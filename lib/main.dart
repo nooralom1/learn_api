@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_api/views/screens/university_list/university_list.dart';
+import 'package:learn_api/views/screens/meal_categories/meal_categories.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: UniversityListScreen(),
+      home: MealCategoriesScreen(),
     );
   }
 }

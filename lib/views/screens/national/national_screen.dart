@@ -31,17 +31,34 @@ class _NationalScreenState extends State<NationalScreen> {
           backgroundColor: Colors.blue,
         ),
         body: ListView.builder(
-          itemCount: data.length,
+            itemCount: data.length,
             itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: ListTile(
-              tileColor: const Color(0xffffb3e6),
-              leading: CircleAvatar(radius: 30,backgroundColor: const Color(0xffb3fff0),child: Text("${data[index].countryId}",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),),
-              title: const Text("probability:",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Color(0xffff0000)),),
-              subtitle: Text("${data[index].probability}",style: const TextStyle(fontWeight: FontWeight.bold),),
-            ),
-          );
-        }));
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListTile(
+                  tileColor: const Color(0xffffb3e6),
+                  leading: CircleAvatar(
+                    radius: 30,
+                    backgroundColor: const Color(0xffb3fff0),
+                    child: Text(
+                      "${data[index].countryId}",
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 22),
+                    ),
+                  ),
+                  title: const Text(
+                    "probability:",
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xffff0000)),
+                  ),
+                  subtitle: Text(
+                    "${data[index].probability}",
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+              );
+            }));
   }
 }
