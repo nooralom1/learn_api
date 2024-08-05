@@ -14,7 +14,6 @@ class NationalService {
         return data.country?? [];
       }
     } catch (e) {
-      print("Error: ${e}");
     }
     return [];
   }
