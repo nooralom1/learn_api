@@ -10,6 +10,7 @@ class MealScreen extends StatefulWidget {
 }
 
 class _MealScreenState extends State<MealScreen> {
+
   List<Meals> data = [];
   nData() async {
     data = await MealServices.mealServices();

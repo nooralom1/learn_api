@@ -13,6 +13,7 @@ class MealModel {
   }
 
   Map<String, dynamic> toJson() {
+
     final Map<String, dynamic> data = <String, dynamic>{};
     if (meals != null) {
       data['meals'] = meals!.map((v) => v.toJson()).toList();
