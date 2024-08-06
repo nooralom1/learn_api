@@ -6,6 +6,7 @@ class NationalModel {
   NationalModel({this.count, this.name, this.country});
 
   NationalModel.fromJson(Map<String, dynamic> json) {
+
     count = json['count'];
     name = json['name'];
     if (json['country'] != null) {

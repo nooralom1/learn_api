@@ -10,6 +10,7 @@ class NationalScreen extends StatefulWidget {
 }
 
 class _NationalScreenState extends State<NationalScreen> {
+
   List<Country> data = [];
   receiveData() async {
     data = await NationalService.nationalService();
